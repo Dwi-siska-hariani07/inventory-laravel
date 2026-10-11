@@ -1,10 +1,10 @@
-# 📦 Inventory Management System (Laravel Edition)
+# Inventory Management System (Laravel Edition)
 > **Mata Kuliah:** Web Programming / Relational Database + Advanced Web  
 > **Pertemuan 5:** Laravel Fundamental — *Mengubah Inventory Management System P4 Menjadi Laravel Application*
 
 ---
 
-## 📌 1. Pendahuluan & Posisi Pertemuan 5 (Sesuai Slide 02)
+## 1. Pendahuluan & Posisi Pertemuan 5 (Sesuai Slide 02)
 
 Proyek ini merupakan hasil **refactoring dan migrasi penuh** dari proyek **Pertemuan 4 (PHP Native)** menuju **Framework Laravel 8 berbasis arsitektur MVC (Model-View-Controller)**.
 
@@ -13,7 +13,7 @@ Proyek ini merupakan hasil **refactoring dan migrasi penuh** dari proyek **Perte
 
 ---
 
-## 🏗️ 2. Penjelasan Arsitektur MVC & Alur Data (Slide 10–11)
+## 2. Penjelasan Arsitektur MVC & Alur Data (Slide 10–11)
 
 Sistem bekerja berdasarkan siklus hidup permintaan (*Request Lifecycle*) yang bersih dan terstruktur:
 
@@ -41,7 +41,7 @@ Sistem bekerja berdasarkan siklus hidup permintaan (*Request Lifecycle*) yang be
 
 ---
 
-## 📂 3. Struktur Direktori Proyek (Sesuai Slide 36)
+## 3. Struktur Direktori Proyek (Sesuai Slide 36)
 
 ```text
 laravel dwi/
@@ -93,7 +93,7 @@ laravel dwi/
 
 ---
 
-## ⚡ 4. Fitur-Fitur Lengkap (Persis Seperti P4)
+## 4. Fitur-Fitur Lengkap (Persis Seperti P4)
 
 1. **Autentikasi Multi-User (Admin & Staff):**
    - Login menggunakan akun **Username & Password**.
@@ -120,7 +120,7 @@ laravel dwi/
 
 ---
 
-## 🛠️ 5. Cara Menjalankan Aplikasi di Komputer Anda
+## 5. Cara Menjalankan Aplikasi di Komputer Anda
 
 ### Langkah 1: Nyalakan MySQL di XAMPP
 Buka **XAMPP Control Panel**, lalu pastikan modul **MySQL** dan **Apache** dalam keadaan aktif (**Running**).
@@ -149,25 +149,10 @@ Buka browser dan akses alamat:
 
 ---
 
-## 🔑 6. Akun Login untuk Praktikum & Demo Dosen
+## 6. Akun Login untuk Praktikum & Demo Dosen
 
 | Role | Username | Password | Hak Akses Fitur |
 |---|---|---|---|
 | **Administrator** | `admin` | `admin123` | Akses penuh seluruh menu: Dashboard, Produk (CRUD), Kategori, Supplier, Transaksi Stok, dan Kelola Pengguna. |
 | **Staff** | `staff` | `staff123` | Akses terbatas: Melihat produk, mencatat barang masuk/keluar, dan melihat histori transaksi. Menu Kelola User otomatis disembunyikan. |
 
----
-
-## 📋 7. Checklist Kelulusan Pertemuan 5 (Sesuai Slide 46)
-
-- [x] Project Laravel dapat dijalankan (`php artisan serve`).
-- [x] `.env` dan koneksi database benar (`DB_DATABASE=inventory_db`).
-- [x] `route:list` menampilkan route resource yang diharapkan.
-- [x] Migration dapat dijalankan dari database kosong (`migrate:fresh`).
-- [x] Seeder menghasilkan data uji (`DatabaseSeeder`).
-- [x] Model memiliki relationship yang benar (`belongsTo`, `hasMany`, `belongsToMany`).
-- [x] Resource controller menangani CRUD (`ProductController`).
-- [x] Blade memakai layout master dan output escaping aman.
-- [x] Form memiliki `@csrf`, validasi, dan pesan error `@error`.
-- [x] Search dan pagination mempertahankan query string (`withQueryString()`).
-- [x] Inventory Management System P4 berhasil dipindahkan secara utuh dan konsisten.
